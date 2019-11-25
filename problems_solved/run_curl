@@ -1,0 +1,8 @@
+i=640
+while [[ $i -le 680 ]]
+do
+
+eval curl 'http://hdpurgetest-vh.edgeflash.qa.akamai.com/z/prasanna/firefly/voduniversal_62107642_2000K_`echo $i`.mp4/manifest.f4m?hdcore=3.9'
+echo "curl 'http://hdpurgetest-vh.edgeflash.qa.akamai.com/z/prasanna/firefly/voduniversal_62107642_2000K_$i.mp4/manifest.f4m?hdcore=3.9'"
+let i=i+1
+done

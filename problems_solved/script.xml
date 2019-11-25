@@ -1,0 +1,10 @@
+<vod-purge>
+	<request-name>test1</request-name>
+	<url-purge>
+	<url>http://hdpurgetest-vh.edgeflash.qa.akamai.com/z/tenseconds.mp4/manifest.f4m</url>
+		<files>
+			<file>fiveseconds.mp4</file>
+		</files>
+	</url-purge>
+	<email>pchandil@akamai.com</email>
+</vod-purge>
