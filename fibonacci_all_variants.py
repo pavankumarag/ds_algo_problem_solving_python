@@ -7,7 +7,7 @@ def fib_rec(n):
 	return fib_rec(n-1) + fib_rec(n-2)
 
 
-def fib_linear(n):
+def fib_bruteforce(n):
 	old, new = 0, 1
 	for i in range(0, n):
 		new, old = old + new, new
@@ -29,7 +29,7 @@ if __name__ == "__main__":
 		f.append(-1)
 	f[0] = 0
 	f[1] = 1
-	print fib_linear(10)
+	print fib_bruteforce(10)
 	print fib_rec(10)
 	print fib_rec_memoization(10)
 	import timeit
