@@ -18,9 +18,9 @@ f = list()
 
 
 def fib_rec_memoization(n):
-	if f[n] != -1:
+	if f[n] != -1:  # O(1)
 		return f[n]
-	f[n] = fib_rec_memoization(n-1) + fib_rec_memoization(n-2)
+	f[n] = fib_rec_memoization(n-1) + fib_rec_memoization(n-2) #insert to list is O(1)
 	return f[n]
 
 
