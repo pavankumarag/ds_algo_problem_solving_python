@@ -24,15 +24,25 @@ def fib_rec_memoization(n):
 	return f[n]
 
 
+def fib_formula(n):
+	import math
+	return math.pow((math.sqrt(5) + 1)/2, n)/math.sqrt(5)
+
 if __name__ == "__main__":
 	for i in range(0,51):
 		f.append(-1)
 	f[0] = 0
 	f[1] = 1
-	print fib_bruteforce(10)
-	print fib_rec(10)
-	print fib_rec_memoization(10)
+	print "fib brute force", fib_bruteforce(10)
+	print "fib recursion", fib_rec(10)
+	print "fib recursion with meoization", fib_rec_memoization(10)
+	print "fib with formula", fib_formula(10)
 	import timeit
-	print timeit.timeit("fib_linear(40)", setup="from __main__ import fib_linear", number=1)
+	print "fib(40) Bruteforce time",
+	print timeit.timeit("fib_bruteforce(40)", setup="from __main__ import fib_bruteforce", number=1)
+	print "fib(40) recursion time",
 	print timeit.timeit("fib_rec(40)", setup="from __main__ import fib_rec", number=1)
+	print "fib(40) dp or memoization time",
 	print timeit.timeit("fib_rec_memoization(40)", setup="from __main__ import fib_rec_memoization", number=1)
+	print "fib(40) formula time",
+	print timeit.timeit("fib_formula(40)", setup="from __main__ import fib_formula", number=1)
