@@ -14,25 +14,26 @@ def closest_value_in_list_logn_my_try(a, k):
 		while low < high:
 			mid = (low + high)/2
 			mid_diff = abs(k - a[mid])
-			if mid + 1 <= high:
+			if mid + 1 <= high: # checking we are not crossing array bounds
 				right_mid_diff = abs(k - a[mid + 1])
-			if mid - 1 >= low:
+			if mid - 1 >= low: # checking we are not crossing array bounds
 				left_mid_diff = abs(k - a[mid - 1])
+			# if a[mid] is closest so as to avoid going further
 			if a[mid] == k or (mid_diff < right_mid_diff and mid_diff < left_mid_diff):
 				closest_val.clear()
 				closest_val.setdefault(a[mid])
 				break
-			elif mid_diff == right_mid_diff:
+			elif mid_diff == right_mid_diff: # if there are two closest for k
 				closest_val.clear()
 				closest_val.setdefault(a[mid])
 				closest_val.setdefault(a[mid+1])
 				break
-			elif mid_diff == left_mid_diff:
+			elif mid_diff == left_mid_diff: # if there are two closest for k
 				closest_val.clear()
 				closest_val.setdefault(a[mid])
 				closest_val.setdefault(a[mid-1])
 				break
-			elif right_mid_diff < left_mid_diff:
+			elif right_mid_diff < left_mid_diff: # decide which half of array to discard
 				if right_mid_diff < min_diff:
 					min_diff = right_mid_diff
 					closest_val.clear()
@@ -44,7 +45,7 @@ def closest_value_in_list_logn_my_try(a, k):
 					closest_val.clear()
 					closest_val.setdefault(a[mid-1])
 				high = mid - 1
-			elif right_mid_diff == left_mid_diff:
+			elif right_mid_diff == left_mid_diff: # check if two closest match
 				closest_val.clear()
 				closest_val.setdefault(a[mid+1])
 				closest_val.setdefault(a[mid-1])
@@ -65,23 +66,24 @@ def closest_val_in_lst_logn(a, k):
 	closest_val = None
 	mid_diff = None
 	while low <= high:
-		# print a[low:high+1]
+		# calculate mid_diff, right_mid_diff, left_mid_diff to check the closest match
 		mid = (low + high) / 2
 		if mid+1 < len(a):
 			right_mid_diff = abs(k - a[mid+1])
 		if mid > 0:
 			left_mid_diff = abs(k - a[mid-1])
 		mid_diff = abs(k - a[mid])
-		if mid_diff == right_mid_diff and mid+1 < len(a):
+		if mid_diff == right_mid_diff and mid+1 < len(a): # check two closest for k
 				return [a[mid], a[mid+1]]
-		elif mid_diff == left_mid_diff and mid < 0:
+		elif mid_diff == left_mid_diff and mid < 0: # check two closest for k
 			return [a[mid-1], a[mid]]
-		if right_mid_diff < min_diff:
+		if right_mid_diff < min_diff: # min_diff = lowest(min_diff, right_mid_diff, left_mid_diff)
 			min_diff = right_mid_diff
-			closest_val = a[mid + 1]
+			closest_val = a[mid + 1]   # and update closest respectively
 		if left_mid_diff < min_diff:
 			min_diff = left_mid_diff
 			closest_val = a[mid - 1]
+		# Binarty search decisions
 		if k > a[mid]:
 			low = mid + 1
 		elif k < a [mid]:
@@ -101,13 +103,15 @@ class BSTNode:
 
 class Solutions:
 	def recursive_closest_val(self, root, val):
+		# start with closest = root.data, last argument
 		return self.binary_search(root, val, root.data)
 
 	@staticmethod
 	def closest_val(root, val):
 		closest = root.data
 		while root:
-			if abs(root.data - val) < abs(val - closest): closest = root.data
+			if abs(root.data - val) < abs(val - closest): # check on root.data is closest
+				closest = root.data
 			if val < root.data : root = root.left
 			else: root = root.right
 		return closest
@@ -115,14 +119,14 @@ class Solutions:
 	def binary_search(self, root, val, closest):
 		if not root:
 			return closest
-		if abs(root.data - val) < abs(val - closest):
+		if abs(root.data - val) < abs(val - closest): # check on root.data is closest
 			closest = root.data
 		if val < root.data: return self.binary_search(root.left, val, closest)
 		elif val > root.data: return self.binary_search(root.right, val, closest)
 		return closest
 
 	def find_closest_val(self, root, k):
-		min_diff = float('inf')
+		min_diff = float('inf') # same as we did for list
 		min_diff_key = [-1]
 		self.find_closest_helper(root, k, min_diff, min_diff_key)
 		return min_diff_key[0]
@@ -132,7 +136,7 @@ class Solutions:
 		if root.data == k:
 			min_diff_key[0] = root.data
 			return
-		if min_diff > (root.data - k):
+		if min_diff > (root.data - k): # check if root has closest element
 			min_diff = root.data - k
 			min_diff_key[0] = root.data
 		if k < root.data:
