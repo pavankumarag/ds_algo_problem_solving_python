@@ -37,6 +37,16 @@ def two_sum_n(a, k):
 	return set(pairs)  # O(n), overall time complexity = O(n) + O(n) + O(n) = O(n)
 
 
+def two_sum_n_opt(a, k):
+	pairs = list()
+	d = dict()
+	for i in range(0, len(a)):
+		d[a[i]] = i
+		if k - a[i] in d.keys() and d[k - a[i]] !=i :
+			pairs.append((k-a[i], a[i]))
+	return pairs
+
+
 def binary_search(a, ele): # takes O(logn)
 	low = 0
 	high = len(a) - 1
@@ -53,7 +63,8 @@ def binary_search(a, ele): # takes O(logn)
 
 if __name__ == "__main__":
 	a = [1,2,6,5,3,4,0]
-	k = 4
+	k = 3
 	print two_sum_n(a, k)
 	print two_sum_nlogn(a, k)
 	print two_sum_n2(a, k)
+	print two_sum_n_opt(a, k)
