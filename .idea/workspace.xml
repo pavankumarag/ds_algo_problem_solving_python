@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="838d0b85-64b3-4c27-9d9f-fa53d3018a22" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fibonacci_all_variants.py" afterPath="$PROJECT_DIR$/fibonacci_all_variants.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/practice/easy/fibonacci_all_variants.py" afterPath="$PROJECT_DIR$/practice/easy/01_fibonacci_all_variants.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/practice/easy/two_sum.py" afterPath="$PROJECT_DIR$/practice/easy/02_two_sum.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,20 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="linked_list_all.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ADT/linked_list_all.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="834">
-              <caret line="88" column="27" lean-forward="false" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
-              <folding>
-                <element signature="e#160#299#0" expanded="false" />
-                <element signature="e#1057#1145#0" expanded="false" />
-                <element signature="e#1187#1279#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="binary_tree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ADT/binary_tree.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/vinoth_work.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
-              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+              <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -83,17 +71,37 @@
         <entry file="file://$PROJECT_DIR$/fibonacci_all_variants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fibonacci_all_variants.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practice/easy/fibonacci_all_variants.py">
+      <file leaf-file-name="01_fibonacci_all_variants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice/easy/01_fibonacci_all_variants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="97">
+              <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02_two_sum.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice/easy/02_two_sum.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03_closest_value_bst_list.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/practice/easy/03_closest_value_bst_list.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="56" column="35" lean-forward="false" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -105,18 +113,6 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="check_bst.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/check_bst.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -157,6 +153,9 @@
         <option value="$PROJECT_DIR$/delete_vinoth.py" />
         <option value="$PROJECT_DIR$/vinoth_work.py" />
         <option value="$PROJECT_DIR$/fibonacci_all_variants.py" />
+        <option value="$PROJECT_DIR$/practice/easy/fibonacci_all_variants.py" />
+        <option value="$PROJECT_DIR$/practice/easy/two_sum.py" />
+        <option value="$PROJECT_DIR$/practice/easy/closest_value_bst_list.py" />
       </list>
     </option>
   </component>
@@ -230,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.delete_vinoth">
+  <component name="RunManager" selected="Python.closest_value_bst_list">
     <configuration name="check_bst" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -248,19 +247,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="count_of_ele_sorted_array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="closest_value_bst_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice/easy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DS_Algos_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/count_of_ele_sorted_array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/easy/03_closest_value_bst_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -282,54 +281,54 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="linked_list_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="fibonacci_all_variants" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice/easy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DS_Algos_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ADT/linked_list_all.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/easy/01_fibonacci_all_variants.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="search_circular_sorted_array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="two_sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice/easy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DS_Algos_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/search_circular_sorted_array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/easy/02_two_sum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.count_of_ele_sorted_array" />
-      <item index="1" class="java.lang.String" itemvalue="Python.search_circular_sorted_array" />
-      <item index="2" class="java.lang.String" itemvalue="Python.linked_list_all" />
-      <item index="3" class="java.lang.String" itemvalue="Python.check_bst" />
-      <item index="4" class="java.lang.String" itemvalue="Python.delete_vinoth" />
+      <item index="0" class="java.lang.String" itemvalue="Python.check_bst" />
+      <item index="1" class="java.lang.String" itemvalue="Python.delete_vinoth" />
+      <item index="2" class="java.lang.String" itemvalue="Python.fibonacci_all_variants" />
+      <item index="3" class="java.lang.String" itemvalue="Python.two_sum" />
+      <item index="4" class="java.lang.String" itemvalue="Python.closest_value_bst_list" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.delete_vinoth" />
-        <item index="1" class="java.lang.String" itemvalue="Python.check_bst" />
-        <item index="2" class="java.lang.String" itemvalue="Python.linked_list_all" />
-        <item index="3" class="java.lang.String" itemvalue="Python.search_circular_sorted_array" />
-        <item index="4" class="java.lang.String" itemvalue="Python.count_of_ele_sorted_array" />
+        <item index="0" class="java.lang.String" itemvalue="Python.closest_value_bst_list" />
+        <item index="1" class="java.lang.String" itemvalue="Python.two_sum" />
+        <item index="2" class="java.lang.String" itemvalue="Python.fibonacci_all_variants" />
+        <item index="3" class="java.lang.String" itemvalue="Python.delete_vinoth" />
+        <item index="4" class="java.lang.String" itemvalue="Python.check_bst" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +355,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -523,7 +522,7 @@
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#70#79#0" expanded="true" />
+            <element signature="e#70#79#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -541,7 +540,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
-            <element signature="e#537#547#0" expanded="true" />
+            <element signature="e#537#547#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -603,7 +602,7 @@
     <entry file="file://$PROJECT_DIR$/vinoth_work.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
-          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -637,15 +636,31 @@
     <entry file="file://$PROJECT_DIR$/fibonacci_all_variants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/easy/fibonacci_all_variants.py">
+    <entry file="file://$PROJECT_DIR$/practice/easy/01_fibonacci_all_variants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="97">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/easy/02_two_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/easy/03_closest_value_bst_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="56" column="35" lean-forward="false" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
           <folding />
         </state>
       </provider>
