@@ -38,6 +38,12 @@ def binary_search_rec(a, low, high, ele, ri=-1, occurence="default"):
 		return ri
 
 
+def count_of_ele_in_sorted_list(a, ele):
+	first = binary_search(a, ele, occurence="first")
+	last = binary_search(a, ele, occurence="last")
+	return (last - first + 1)
+
+
 def find_num_of_rotation(a):
 	low = 0
 	n = len(a)
@@ -85,6 +91,7 @@ if __name__ == "__main__":
 	first = binary_search(a, ele, occurence="first")
 	last = binary_search(a, ele, occurence="last")
 	print "Number of occurence of %d is %d" %(ele, (last - first + 1))
+	print "Number of occurence of %d is %d" %(ele, count_of_ele_in_sorted_list(a, ele))
 	a = [11, 12, 2, 3, 4]
 	print find_num_of_rotation(a)
 	a = [11, 12, 13, 14, 2]
