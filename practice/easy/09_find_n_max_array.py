@@ -17,8 +17,15 @@ def find_n_max_array_nlogn(a, N): # sorting nlogn + N = nlogn
 	return n_max
 
 
+def find_n_max_array_heap(a, N):
+	import heapq
+	heapq.heapify(a) # O(n log n) to push all the items onto the heap
+	return heapq.nlargest(N, a) # O((n-N) log n) to find the Nth largest element. So the complexity would be O(n log n)
+
+
 if __name__ == "__main__":
 	a = [4,5,9,8,12]
 	N = 2
 	print find_n_max_array_brute_force(a, N)
 	print find_n_max_array_nlogn(a, N)
+	print find_n_max_array_heap(a, N)
