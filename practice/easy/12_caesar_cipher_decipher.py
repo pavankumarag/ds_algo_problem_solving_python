@@ -6,7 +6,7 @@ MAX_KEY_SIZE = 26
 
 def get_mode():
     while True:
-        print('Do you wish to encrypt or decrypt a message?')
+        print('Do you wish to encrypt or decrypt a message? Enter either "encrypt" or "e" or "decrypt" or "d"')
         mode = raw_input().lower()
         if mode in 'encrypt e decrypt d'.split():
             return mode
@@ -66,3 +66,4 @@ if __name__ == "__main__":
 
     print('Your translated text is:')
     print(get_translated_message(mode, message, key))
+
