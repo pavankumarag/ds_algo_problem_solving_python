@@ -23,13 +23,15 @@ class Node:
 
 def move_to_end(node, key):
 	tail = node
+	if node is None:
+		return None
 	while tail.next is not None:
 		tail = tail.next
 	last = tail
 	prev = prev2 = None
 	cur = node
 	while cur != tail:
-		if cur.data != key and prev2 is None:
+		if cur.data == key and prev2 is None:
 			prev = cur
 			cur = cur.next
 			node = cur
