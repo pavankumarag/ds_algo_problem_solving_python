@@ -35,7 +35,7 @@ def count_dp(s, m, n): # runs in O(mn) and takes O(m+n) auxiliary space
 	return table[n][m-1]
 
 
-def count_dp_optimized(s, m, n):
+def count_dp_optimized(s, m, n): # takes O(n) auxiliary space
 	table = [0 for _ in range(n + 1)] # table[i] will be storing the number of solutions for value i. We need n+1 rows
 	# Base case (If given value is 0)
 	table[0] = 1
