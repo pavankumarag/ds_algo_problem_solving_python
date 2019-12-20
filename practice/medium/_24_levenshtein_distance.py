@@ -36,7 +36,7 @@ def levenshtein_numpy(seq1, seq2):
 	return (matrix[size_x - 1, size_y - 1])
 
 
-def lavenshtein_distance_iterative(str1, str2, m, n):
+def lavenshtein_distance_iterative(str1, str2, m, n): # O(N*M)
 	matrix = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
 	for x in range(m + 1):
 		matrix[x][0] = x
@@ -64,7 +64,7 @@ def lavenshtein_distance_recursive(str1, str2, m, n):
 								 lavenshtein_distance_recursive(str1, str2, m - 1, n))
 
 
-def lavenshtein_distance_dp(str1, str2, m, n):
+def lavenshtein_distance_dp(str1, str2, m, n): # Time Complexity: O(m x n) Auxiliary Space: O(m x n)
 	dp = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
 	for x in range(m+1):
 		for y in range(n+1):
