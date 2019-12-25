@@ -1,5 +1,3 @@
-# https://www.geeksforgeeks.org/building-heap-from-array/
-
 
 def heapify_max(arr, n, i):
 	'''
