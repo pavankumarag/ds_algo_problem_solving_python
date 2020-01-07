@@ -50,20 +50,16 @@ def min_initial_points(points, m, n):
 	to fill entire table 
 	'''
 	for i in range(m - 2, -1, -1):
-		dp[i][n - 1] = max(dp[i + 1][n - 1] -
-											 points[i][n - 1], 1)
+		dp[i][n - 1] = max(dp[i + 1][n - 1] - points[i][n - 1], 1)
 	for i in range(2, -1, -1):
-		dp[m - 1][i] = max(dp[m - 1][i + 1] -
-											 points[m - 1][i], 1)
+		dp[m - 1][i] = max(dp[m - 1][i + 1] - points[m - 1][i], 1)
 	''' 
 	fill the table in bottom-up fashion 
 	'''
 	for i in range(m - 2, -1, -1):
 		for j in range(n - 2, -1, -1):
-			min_points_on_exit = min(dp[i + 1][j],
-															 dp[i][j + 1])
-			dp[i][j] = max(min_points_on_exit -
-										 points[i][j], 1)
+			min_points_on_exit = min(dp[i + 1][j], dp[i][j + 1])
+			dp[i][j] = max(min_points_on_exit - points[i][j], 1)
 
 	return dp[0][0]
 
