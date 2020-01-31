@@ -34,7 +34,7 @@ def longest_substr(string):
 			pos[string[i]] = i # Update last occurrence of current character
 	# Compare length of last substring with maxlen and update maxlen and start accordingly
 	if max_len < i - start_cur:
-		max_len = i = start_cur
+		max_len = i - start_cur
 		start_max = start_cur
 	return string[start_max : start_max + max_len]
 
