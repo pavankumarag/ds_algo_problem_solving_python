@@ -14,6 +14,10 @@ Pattern = “**ba**ab", output : true
 Pattern = "baaa?ab", output : true
 Pattern = "ba*a?", output : true
 Pattern = "a*ab", output : false
+
+Reference:
+https://www.geeksforgeeks.org/wildcard-pattern-matching/
+https://www.geeksforgeeks.org/dynamic-programming-wildcard-pattern-matching-linear-time-constant-space/
 """
 
 
