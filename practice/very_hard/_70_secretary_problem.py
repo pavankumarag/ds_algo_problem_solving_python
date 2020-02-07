@@ -1,5 +1,5 @@
 """
-
+Reference: https://www.geeksforgeeks.org/secretary-problem-optimal-stopping-problem/
 """
 
 # Python3 Program to test 1/e law for
