@@ -88,16 +88,17 @@ class FlightGraph:
 			return ret
 
 
-flights = FlightGraph([
-	{'dep': 'FRA', 'arr': 'AMS', 'dep_dt': '2017-05-01 12:00:00', 'arr_dt': '2017-05-01 13:15:00', 'price': 100},
-	{'dep': 'FRA', 'arr': 'AMS', 'dep_dt': '2017-05-01 12:00:00', 'arr_dt': '2017-05-01 13:15:00', 'price': 150},
-	{'dep': 'FRA', 'arr': 'CPH', 'dep_dt': '2017-05-01 10:00:00', 'arr_dt': '2017-05-01 12:00:00', 'price': 80},
-	{'dep': 'FRA', 'arr': 'MAD', 'dep_dt': '2017-05-01 09:00:00', 'arr_dt': '2017-05-01 10:50:00', 'price': 30},
-	{'dep': 'CPH', 'arr': 'AMS', 'dep_dt': '2017-05-01 15:00:00', 'arr_dt': '2017-05-01 16:30:00', 'price': 60},
-	{'dep': 'CPH', 'arr': 'MAD', 'dep_dt': '2017-05-01 14:15:00', 'arr_dt': '2017-05-01 17:10:00', 'price': 70},
-	{'dep': 'MAD', 'arr': 'AMS', 'dep_dt': '2017-05-01 19:00:00', 'arr_dt': '2017-05-01 21:40:00', 'price': 20},
-])
+if __name__ == "__main__":
+	flights = FlightGraph([
+		{'dep': 'FRA', 'arr': 'AMS', 'dep_dt': '2017-05-01 12:00:00', 'arr_dt': '2017-05-01 13:15:00', 'price': 100},
+		{'dep': 'FRA', 'arr': 'AMS', 'dep_dt': '2017-05-01 12:00:00', 'arr_dt': '2017-05-01 13:15:00', 'price': 150},
+		{'dep': 'FRA', 'arr': 'CPH', 'dep_dt': '2017-05-01 10:00:00', 'arr_dt': '2017-05-01 12:00:00', 'price': 80},
+		{'dep': 'FRA', 'arr': 'MAD', 'dep_dt': '2017-05-01 09:00:00', 'arr_dt': '2017-05-01 10:50:00', 'price': 30},
+		{'dep': 'CPH', 'arr': 'AMS', 'dep_dt': '2017-05-01 15:00:00', 'arr_dt': '2017-05-01 16:30:00', 'price': 60},
+		{'dep': 'CPH', 'arr': 'MAD', 'dep_dt': '2017-05-01 14:15:00', 'arr_dt': '2017-05-01 17:10:00', 'price': 70},
+		{'dep': 'MAD', 'arr': 'AMS', 'dep_dt': '2017-05-01 19:00:00', 'arr_dt': '2017-05-01 21:40:00', 'price': 20},
+	])
 
-for route in flights['FRA'].routes('AMS', 3):
-	# TODO: filter if the arr_dt and dep_dt don't allow the route to be possible
-	print(', '.join('{0.dep} -> {0.arr} ({0.price})'.format(f) for f in route))
+	for route in flights['FRA'].routes('AMS', 3):
+		# TODO: filter if the arr_dt and dep_dt don't allow the route to be possible
+		print(', '.join('{0.dep} -> {0.arr} ({0.price})'.format(f) for f in route))
