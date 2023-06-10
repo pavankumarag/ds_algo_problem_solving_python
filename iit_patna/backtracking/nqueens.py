@@ -1,11 +1,9 @@
-global N
-N = 5
-
 def printBoard(board):
     for i in range(N):
         for j in range(N):
             print(board[i][j], end = " ")
         print()
+    print()
 
 def isSafe(board, row, col):
 
@@ -29,9 +27,9 @@ def isSafe(board, row, col):
 
 def solveNQ(board, col):
     
-    # base case
-    if col >= N:
-        return True
+    if col == len(board):
+        printBoard(board)
+        return
 
     # Consider this column and try placing
     # this queen in all rows one by one
@@ -57,10 +55,9 @@ def solve():
     board = [[0]*N for _ in range(N)]
 
     if solveNQ(board, 0) == False:
-        print ("No Possible Solution exists")
+        print ("No Possible Solution exists further")
         return False
 
-    printBoard(board)
     return True
 
 if __name__ == "__main__":
