@@ -52,14 +52,9 @@ def solveNQ(board, col):
     return False
 
 def solve():
-    board = [ [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],]
+     #chessboard
+    #NxN matrix with all elements 0
+    board = [[0]*N for _ in range(N)]
 
     if solveNQ(board, 0) == False:
         print ("No Possible Solution exists")
