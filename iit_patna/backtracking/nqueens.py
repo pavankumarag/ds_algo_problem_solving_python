@@ -1,4 +1,9 @@
+num_of_solutions = 0
+
 def printBoard(board):
+    global num_of_solutions
+    num_of_solutions += 1
+    print("Solution number {}".format(num_of_solutions))
     for i in range(N):
         for j in range(N):
             print(board[i][j], end = " ")
@@ -26,7 +31,6 @@ def isSafe(board, row, col):
     return True
 
 def solveNQ(board, col):
-    
     if col == len(board):
         printBoard(board)
         return
@@ -64,3 +68,4 @@ if __name__ == "__main__":
     print ("Enter the number of queens")
     N = int(input())
     solve()
+    print("\nTotal number of solutions {}\n".format(num_of_solutions))
