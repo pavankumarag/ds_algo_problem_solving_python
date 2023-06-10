@@ -68,4 +68,7 @@ def solve():
     printBoard(board)
     return True
 
-solve()
+if __name__ == "__main__":
+    print ("Enter the number of queens")
+    N = int(input())
+    solve()
